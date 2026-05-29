@@ -148,6 +148,7 @@
 let currentUser = localStorage.getItem("user");
 
 function showPage(page){
+  document.getElementById("serversList")
   document.querySelectorAll("section").forEach(s => s.classList.add("hidden"));
   document.getElementById(page).classList.remove("hidden");
   updateProfile();
